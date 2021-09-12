@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:clipToPadding="false"
+    android:layout_marginTop="15dp"
+    android:background="#AA1414"
+    android:clipChildren="false"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/editshape">
+
+        <ImageView
+            android:id="@+id/pf"
+            android:layout_width="114dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+      />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/pf"
+            android:fontFamily="@font/artifika"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/partyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/pf"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aldrich"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg"
+            android:text="Click To View Profile"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#0632A1"
+            android:layout_below="@+id/partyname"
+            android:layout_toEndOf="@+id/pf"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+

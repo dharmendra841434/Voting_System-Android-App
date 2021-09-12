@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    tools:context=".home_activity">
+
+    <View
+        android:id="@+id/topdesign"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="685dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/loginheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/bitter"
+            android:text="Registred Now"
+            android:textColor="@color/headingtxtclr"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/stid"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:layout_below="@+id/loginheading"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+            <EditText
+                android:id="@+id/studentid"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:hint="Enter ID like . 18101310XXXX"
+                android:background="@color/white"
+                android:inputType="number"
+                android:paddingLeft="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:id="@+id/stname"
+            android:layout_marginStart="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:layout_marginTop="20dp"
+            android:clipChildren="false"
+            android:layout_below="@+id/stid"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+
+            <EditText
+                android:id="@+id/studentname"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/stcourse"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:layout_below="@+id/stname"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+            <EditText
+                android:id="@+id/studentcourse"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:hint="Enter Course"
+                android:background="@color/white"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:id="@+id/stemail"
+            android:layout_marginStart="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:layout_marginTop="20dp"
+            android:clipChildren="false"
+            android:layout_below="@+id/stcourse"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+
+            <EditText
+                android:id="@+id/studentemail"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/stmob"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:layout_below="@+id/stemail"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+            <EditText
+                android:id="@+id/studentmob"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:hint="Enter Mobile number"
+                android:background="@color/white"
+                android:inputType="number"
+                android:paddingLeft="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:id="@+id/stpass"
+            android:layout_marginStart="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:layout_marginTop="20dp"
+            android:clipChildren="false"
+            android:layout_below="@+id/stmob"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+
+            <EditText
+                android:id="@+id/studentpass"
+                android:layout_width="310dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp" />
+
+        </androidx.cardview.widget.CardView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:layout_toEndOf="@+id/stpass"
+            android:layout_marginTop="470dp"
+
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:id="@+id/stpass2"
+            android:layout_marginStart="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:layout_marginTop="20dp"
+            android:clipChildren="false"
+            android:layout_below="@+id/stpass"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+
+            <EditText
+                android:id="@+id/studentpass2"
+                android:layout_width="310dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:hint="Re-Enter Password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp" />
+
+        </androidx.cardview.widget.CardView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show2"
+            android:layout_toEndOf="@+id/stpass2"
+            android:layout_marginTop="530dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="53dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/arbutus"
+            android:text="Register now"
+            android:textColor="#F19309"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit"
+            android:id="@+id/logintxt"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Already have an account?"
+            android:textSize="20dp"
+            android:textColor="@color/headingtxtclr"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit"
+            android:id="@+id/loginbtn"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="LOGIN"
+            android:layout_toEndOf="@+id/logintxt"
+            android:textSize="20dp"
+            android:textColor="#F69507"
+            android:layout_marginStart="5dp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/btmdesign"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
